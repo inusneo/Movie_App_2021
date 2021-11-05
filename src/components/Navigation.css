@@ -1,0 +1,36 @@
+/* Navigation.css */
+
+.nav {
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 10px;
+  top: 50px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 13px 27px -5px rgba(50, 50, 93, 0.25),
+              0 8px 16px -8px rgba(0, 0, 0, 0.3),
+              0 -12px 16px -8px rgba(0, 0, 0, 0.025);
+}
+.nav a {
+  color: #0008fc;
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav a:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    left: initial; /* left: auto */
+    top: initial;
+    bottom: 0;
+    width: 100%;
+  }
+}
